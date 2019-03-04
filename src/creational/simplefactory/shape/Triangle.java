@@ -1,4 +1,4 @@
-package simplefactory;
+package creational.simplefactory.shape;
 
 public class Triangle extends Shape {
     @Override

@@ -1,4 +1,4 @@
-package simplefactory;
+package creational.simplefactory.shape;
 
 public abstract class Shape {
     public abstract void draw();

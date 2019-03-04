@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<config>
+    <factory>creational.factorymethod.factory.HisenseTVFactory</factory>
+</config>

@@ -1,4 +1,9 @@
-package simplefactory;
+package creational.simplefactory.factory;
+
+import creational.simplefactory.shape.Circle;
+import creational.simplefactory.shape.Rectangle;
+import creational.simplefactory.shape.Shape;
+import creational.simplefactory.shape.Triangle;
 
 public class ShapeFactory {
 
@@ -11,5 +16,11 @@ public class ShapeFactory {
             return new Triangle();
         else
             throw new UnsupportedShapeException("There is no shape of "+type);
+    }
+}
+
+class UnsupportedShapeException extends RuntimeException{
+    public UnsupportedShapeException(String desc){
+        super(desc);
     }
 }

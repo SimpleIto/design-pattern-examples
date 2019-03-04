@@ -8,12 +8,12 @@ import org.dom4j.io.SAXReader;
 
 import java.util.List;
 
-public class XmlReader{
+public class XmlParser {
 
     private Document document;
     private Element root;
 
-    public XmlReader(String path) throws DocumentException {
+    public XmlParser(String path) throws DocumentException {
         document = new SAXReader().read(path);
         root = document.getRootElement();
     }

@@ -1,4 +1,4 @@
-package simplefactory;
+package creational.simplefactory.shape;
 
 public class Rectangle extends Shape{
     @Override
@@ -8,6 +8,6 @@ public class Rectangle extends Shape{
 
     @Override
     public void erase() {
-
+        System.out.println("erase Rectangle");
     }
 }
