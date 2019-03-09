@@ -1,13 +1,20 @@
 package structural.adapter;
 
 public class Adapter implements DataOperation {
+    private BinarySearch search;
+    private QuickSort sort;
+
+    public Adapter(){
+        search = new BinarySearch();
+        sort = new QuickSort();
+    }
     @Override
     public void sort(int[] array) {
-        new QuickSort().quickSort(0,array.length-1,array);
+        sort.quickSort(0,array.length-1,array);
     }
 
     @Override
     public int search(int[] array, int key) {
-        return new BinarySearch().BinarySearch(0,array.length-1,key,array);
+        return search.BinarySearch(0,array.length-1,key,array);
     }
 }
