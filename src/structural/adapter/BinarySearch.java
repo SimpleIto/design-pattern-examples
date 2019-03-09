@@ -2,10 +2,7 @@ package structural.adapter;
 
 public class BinarySearch {
 
-    public int BinarySearch(int[] array,int key){
-        return BinarySearch(0,array.length-1,key,array);
-    }
-    private int BinarySearch(int low, int high, int key, int[] array){
+    public int BinarySearch(int low, int high, int key, int[] array){
         if(low>high)
             return -1;
         int mid = (low+high)/2;

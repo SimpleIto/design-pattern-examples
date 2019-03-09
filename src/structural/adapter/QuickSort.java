@@ -4,10 +4,7 @@ import java.util.Arrays;
 
 public class QuickSort {
 
-    public void quickSort(int[] array){
-        quickSort(0,array.length-1,array);
-    }
-    private void quickSort(int low, int high, int[] array){
+    public void quickSort(int low, int high, int[] array){
         if(low > high)
             return;
         int i=low+1,j=high;//i=low+1 是因为不考虑第一个分界元素
