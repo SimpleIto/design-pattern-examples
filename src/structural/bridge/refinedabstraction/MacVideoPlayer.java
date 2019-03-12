@@ -1,7 +1,6 @@
 package structural.bridge.refinedabstraction;
 
 import structural.bridge.abstraction.VideoPlayer;
-import structural.bridge.implementor.VideoDecoder;
 
 public class MacVideoPlayer extends VideoPlayer {
 
